@@ -10,8 +10,8 @@ export const uploadS3 = TryCatch(async (req, res) => {
   const s3 = new S3({
     region: "eu-north-1",
     credentials: {
-      accessKeyId: "AKIAU6GDYZDTXYNPI7KP",
-      secretAccessKey: "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",
+      accessKeyId: "",
+      secretAccessKey: "",
     },
   });
 
@@ -81,8 +81,8 @@ export async function downloadFromS3(file_key) {
         region: "eu-north-1",
         endpoint: `https://s3.eu-north-1.amazonaws.com`,
         credentials: {
-          accessKeyId: "AKIAU6GDYZDTXYNPI7KP",
-          secretAccessKey: "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",
+          accessKeyId: "",
+          secretAccessKey: "",
         },
       });
 
